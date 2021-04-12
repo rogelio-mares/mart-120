@@ -1,0 +1,46 @@
+<html>
+<title>Contact Us</title>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        function checkboxes()
+        {
+            var Name = document.getElementById("Name").value;
+            if(Name == "")
+            {
+                document.getElementById("Name").focus();
+                document.getElementById("Name").style.backgroundColor = "blue";
+                document.getElementById("NameMessage").innerHTML = "* Required";
+                document.getElementById("NameMessage").style.color = "blue";
+                
+                return false;
+            }
+            
+        }
+        
+    </script>
+
+</head>
+
+</head>
+
+<body style="background-color: gainsboro;">
+    <div style="margin-left: 30px;">
+        <h1>Contact Us</h1>
+        <p></p>
+        
+            <p>Name: <input type="text" id="Name">&nbsp;<span id="NameMessage"></span></p>
+            <p>Email: <input type="text" id="Email">&nbsp;<span id="EmailMessage"></span></p>
+            <button id="btnSubmit" class="btn btn-primary" onclick='checkboxes();'>Submit My Info</button>
+        
+        <p><a href="f1.html">Home Page</a>
+            &nbsp;|&nbsp;<a href="s2.html">Short Story</a></p>
+    </div>
+</body>
+
+</html>
